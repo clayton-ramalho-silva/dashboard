@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/teste', function(){
-    echo 'teste';
+    echo 'teste branch';
 });
