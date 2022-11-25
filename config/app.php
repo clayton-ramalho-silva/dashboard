@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'Dashboard Laravel',
 
     /*
     |--------------------------------------------------------------------------
@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => 'base64:MhDYpmPbkc+aKT/jw1CzrmajSAHY4/v0+h/USw+7ez0=',
 
     'cipher' => 'AES-256-CBC',
 
