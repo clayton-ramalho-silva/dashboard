@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +16,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+
+Route::prefix('admin')->group(function(){
+
+    Route::get('/', [AdminController::class, 'index'])->name('admin.index');
 });
 
-Route::get('/teste', function(){
-    echo 'teste branch';
+
+Route::prefix('cliente')->group(function(){
+    Route::get('/',[ClienteController::class, 'index'])->name('cliente.index');
 });
+
+
+Route::redirect('/', '/login');
+Route::get('/login', [LoginController::class, 'login'])->name('login.page');
+Route::post('/auth',[LoginController::class, 'auth'])->name('auth.user');
+Route::post('/logout', [LoginController::class,'logout'])->name('logout');
+
