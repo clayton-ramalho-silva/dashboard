@@ -35,3 +35,6 @@ Route::get('/login', [LoginController::class, 'login'])->name('login.page');
 Route::post('/auth',[LoginController::class, 'auth'])->name('auth.user');
 Route::post('/logout', [LoginController::class,'logout'])->name('logout');
 
+Route::get('teste', function () {
+    echo "testes";
+});
