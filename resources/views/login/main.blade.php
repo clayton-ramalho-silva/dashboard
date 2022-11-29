@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <div class="container min-vh-100 d-flex align-items-center">
+    <div class="container-fluid min-vh-100 d-flex align-items-center bg-dark">
         <div class="row w-100 d-flex justify-content-center">
 
             @yield('conteudo')
