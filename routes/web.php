@@ -36,5 +36,5 @@ Route::post('/auth',[LoginController::class, 'auth'])->name('auth.user');
 Route::post('/logout', [LoginController::class,'logout'])->name('logout');
 
 Route::get('teste', function () {
-    echo "testes";
+    return view('welcome');
 });
