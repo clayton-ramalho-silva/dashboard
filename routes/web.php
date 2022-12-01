@@ -38,3 +38,5 @@ Route::post('/logout', [LoginController::class,'logout'])->name('logout');
 Route::get('teste', function () {
     return view('welcome');
 });
+
+
