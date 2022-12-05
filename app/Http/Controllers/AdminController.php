@@ -14,6 +14,6 @@ class AdminController extends Controller
         $data = ['user' => $user];
 
 
-        return view('admin.layout.main', $data);
+        return view('admin.dashboard', $data);
     }
 }
