@@ -11,3 +11,6 @@ pass: password
 
 client: buddy.collins@example.org
 pass: password
+
+clayton@tars ~$ ssh -p 65002 u518392673@156.67.73.121
+CastDigital2022@
