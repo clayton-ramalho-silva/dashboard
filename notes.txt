@@ -1,5 +1,5 @@
 Local
-admin: pleannon@example.com
+admin: mabernathy@example.org
 pass: password
 
 client: terry.keyon@example.net

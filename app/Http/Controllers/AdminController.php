@@ -16,4 +16,13 @@ class AdminController extends Controller
 
         return view('admin.dashboard', $data);
     }
+
+    public function users_profile()
+    {
+        $user = Auth::user();
+
+        $data = ['user' => $user];
+
+        return view('admin.users-profile', $data);
+    }
 }
